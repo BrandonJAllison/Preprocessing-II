@@ -169,8 +169,20 @@ img {
   margin: 0 auto;
 }
 .nav-bar {
+  width: 100%;
   display: flex;
   align-items: center;
+  border-bottom: 1.5px dashed #C0C0C0;
+  align-content: flex-end;
+}
+.nav-bar a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #212529;
+  align-content: flex-end;
+}
+.nav-bar h1 {
+  justify-content: flex-start;
 }
 .footer {
   width: 100%;
@@ -182,6 +194,12 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .header-homepage {
+  border-bottom: 1.5px dashed #C0C0C0;
+}
+.home .header-homepage img {
+  margin-bottom: 20px;
 }
 .home .content-section {
   margin: 30px 0;
