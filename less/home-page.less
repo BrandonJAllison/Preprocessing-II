@@ -1,15 +1,38 @@
 .home {
+  
   .header-homepage{
 
     border-bottom: 1.5px dashed @silver;
 
-    img{
-      margin-bottom: 20px;
-      
+    h2{
+     margin: 0 auto;
+
+     @media @mobile{
+       margin: 1rem;
+     }
     }
+
+    p{
+      
+      margin: 0 auto;
+
+      @media @mobile{
+        margin: 1rem;
+      }
+    }
+
+    img{
+      height: auto;
+     
+
+      @media @mobile{
+        width: 100%
+      }
+    }
+   
   }
   .content-section {
-    margin: 30px 0;
+    margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -19,16 +42,35 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile{
+        width: 100%;
+        margin-top: 2rem;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile{
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
+    @media @mobile{
+      display: flex;
+      flex-direction:column;
+      margin:10px;
+  }
+ 
   }
 
   .inverse-content {
@@ -44,15 +86,28 @@
       padding-right: 1%;
       padding-left: 0;
     }
+    @media @mobile{
+
+      display: flex;
+      flex-direction:column-reverse;
+    }   
   }
+  
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
 
     img {
+
       border-radius: 10px;
     }
+    @media @mobile{
+
+      margin: 0 1rem 2rem 1rem;
+      width: 95%;
+        
+  }
   }
 
   .content-pick {
@@ -64,7 +119,20 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile{
+        width: 90%;
+        align-content: center;
+        margin-left: 20px;
+      }
     }
+
+    @media @mobile{
+
+      display: flex;
+      flex-direction:column;
+         
+  }
   }
 
   .btn{
