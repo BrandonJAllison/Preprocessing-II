@@ -236,12 +236,15 @@ img {
 .home .header-homepage {
   border-bottom: 1.5px dashed #C0C0C0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1%;
 }
 .home .header-homepage h2 {
   margin-top: 1rem;
 }
 .home .content-section {
-  margin: 30px auto;
+  margin: 30px 1%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
