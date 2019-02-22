@@ -198,7 +198,7 @@ img {
   width: 40%;
   margin: 20px 0;
   text-align: center;
-  margin-left: 1%;
+  justify-content: flex-end;
 }
 @media (max-width:500px) {
   .nav-bar .fun {
@@ -207,13 +207,14 @@ img {
   }
 }
 .nav-bar .links {
+  display: flex;
   width: 70%;
   text-align: right;
-  justify-content: space-around;
+  justify-content: center;
+  margin-right: 5%;
   text-decoration: none;
   color: #212529;
   font-size: 1.4rem;
-  margin-right: 1%;
 }
 @media (max-width:500px) {
   .nav-bar .links {
