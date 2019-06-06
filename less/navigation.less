@@ -1,1 +1,76 @@
 // Navigation Styles here
+.nav-bar{
+   
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px dashed @silver;
+    
+
+    @media @mobile{
+
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    
+    a{
+       
+        padding: .5rem;
+        text-decoration: none;
+        color:@shark;
+        font-size: 1.4rem;
+        padding-left: 3rem;
+        
+        &:hover{
+            text-decoration:underline;
+        }
+    }
+   
+
+    h1{
+        justify-content: flex-start;
+    }
+
+    .fun{
+        display: flex;
+        width: 40%;
+        margin: 20px 0;
+        text-align:center;
+        justify-content: flex-end;
+        
+        @media @mobile{
+            
+            align-self: center;
+            text-align:center;  
+        }
+    }
+
+    .links{
+        display:flex;
+        width: 70%;
+        text-align:right;
+        justify-content: center;
+        margin-right: 5%;
+
+        
+
+        text-decoration: none;
+        color:@shark;
+        font-size: 1.4rem;
+        
+        
+
+        @media @mobile {
+            
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            margin: 10px;
+            text-align: center;
+        }
+
+    }
+   
+}
+
